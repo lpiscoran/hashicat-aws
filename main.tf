@@ -6,7 +6,7 @@ provider "aws" {
 resource aws_vpc "hashicat" {
   cidr_block           = var.address_space
   enable_dns_hostnames = true
-
+  // this is a comment
   tags = {
     Name = "${var.prefix}-vpc"
   }
